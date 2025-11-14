@@ -132,12 +132,20 @@
     padding-bottom: 50px;
 }
 
-.pd-btn-prev:hover {
-    background-image: url("../images/prev-over.png");
+.mySwiper2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #D9D9D9;
 }
 
-.pd-btn-next:hover {
-    background-image: url("../images/next-over.png");
+.mySwiper2 a:hover {
+    border: 1px solid #E5702B;
+    fill: #E5702B;
 }
 
 .pd-slide-wrap {
