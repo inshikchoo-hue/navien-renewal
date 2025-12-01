@@ -1,0 +1,82 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+$font-family: 'Pretendard';
+
+$headings-font-weight: $font-weight-semibold;
+
+$font-weights: (
+    "light": $font-weight-light,
+    "regular": $font-weight-regular,
+    "semibold": $font-weight-semibold,
+    ) !default;
+
+h1,
+.h1 {
+    @include custom-font-size(70px, 62px, 48px, 38px
+);
+font-weight: $font-weight-semibold; // SemiBold 적용
+line-height: 1.2; // 120%에 해당
+}
+
+h2,
+.h2 {
+    @include custom-font-size(64px, 52px, 44px, 32px);
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+}
+
+h3,
+.h3 {
+    @include custom-font-size(34px, 32px, 30px, 28px);
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+}
+
+
+.subtitle-1 {
+    @include custom-font-size(44px, 36px, 26px, 19px);
+    font-weight: $font-weight-light; // Light 적용
+    line-height: 1.2;
+}
+
+.subtitle-2 {
+    @include custom-font-size(32px, 28px, 22px, 17px);
+    font-weight: $font-weight-light;
+    line-height: 1.2;
+}
+
+.body-1 {
+    @include custom-font-size(20px, 19px, 18px, 17px);
+    font-weight: $font-weight-regular; // Regular 적용
+    line-height: 1.5;
+}
+
+.body-2 {
+    @include custom-font-size(17px, 16px, 15px, 14px);
+    font-weight: $font-weight-regular;
+    line-height: 1.5;
+}
+
+.btn-custom-lg {
+    // Button1
+    @include custom-font-size(26px, 24px, 18px, 14px);
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+    // 부트스트랩 버튼에 적용될 다른 스타일 추가 (패딩, border 등)
+}
+
+.btn-custom-md {
+    // Button2
+    @include custom-font-size(20px, 18px, 16px, 14px);
+    font-weight: $font-weight-semibold;
+    line-height: 1.2;
+}
+
+// 부트스트랩 소스 파일 임포트 (모든 커스텀 변수 및 스타일 적용)
+@import "bootstrap/scss/bootstrap";

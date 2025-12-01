@@ -1,0 +1,22 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@mixin custom-font-size($desktop, $laptop, $tablet, $mobile) {
+    font-size: $desktop; // Desktop 기본값
+
+    // Laptop (992px 이상)
+    @include media-breakpoint-down(lg) {
+        font-size: $laptop;
+    }
+
+    // Tablet (768px 이상)
+    @include media-breakpoint-down(md) {
+        font-size: $tablet;
+    }
+
+    // Mobile (576px 이상)
+    @include media-breakpoint-down(sm) {
+        font-size: $mobile;
+    }
+}
