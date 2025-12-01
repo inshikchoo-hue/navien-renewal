@@ -1,0 +1,25 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            // ⭐️ 핵심 수정: SCSS 파일에서 asset/css 폴더까지의 상대 경로
+            "savePath": "../../asset/css" 
+        }
+    ],
+
+    // ⭐️ Live Sass Compiler에게 node_modules를 검색하라고 알려줍니다.
+    "liveSassCompile.settings.includeItems": [
+        "node_modules"
+    ],
+
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

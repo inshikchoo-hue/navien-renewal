@@ -102,14 +102,14 @@
     color: var(--color-black);
 }
 
-/* .pdList-text p { */
+/* .pdList-text p {
 font-size: 30px;
 font-weight: 300;
 padding-bottom: 20px;
 letter-spacing: -1px;
-}
+} */
 
-.pdList-text h2 {
+/* .pdList-text h2 {
     font-size: 55px;
     font-weight: 300;
     letter-spacing: -1px;
@@ -119,7 +119,7 @@ letter-spacing: -1px;
 .pdList-text h2 span {
     font-size: 70px;
     font-weight: 700;
-}
+} */
 
 
 /* Swiper2 */

@@ -1,0 +1,14 @@
+// src/scss/main.scss
+
+// 1. 사용자 정의 변수 (가장 먼저 로드되어야 Bootstrap 기본값을 덮어씁니다.)
+@import 'abstracts/variables'; 
+@import 'abstracts/mixins';
+
+// 2. 부트스트랩 전체 불러오기 (검증된 정확한 경로 사용)
+// 이 한 줄이 Bootstrap의 모든 파일을 순서대로 불러옵니다.
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+
+// 3. 내 공통 스타일
+@import 'base/common';
+// ... layout/header, components/buttons 등 다른 파일 임포트도 여기에 위치
+

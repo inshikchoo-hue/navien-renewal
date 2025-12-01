@@ -1,0 +1,21 @@
+{
+  "name": "navien-renewal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/scss/custom.scss src/css/custom.css --style=compressed",
+    "watch:css": "sass --watch src/scss/custom.scss:src/css/custom.css",
+    "sass:build": "sass src/scss/main.scss asset/css/main.css",
+    "sass:watch": "sass src/scss/main.scss asset/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
